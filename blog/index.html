@@ -202,6 +202,64 @@
             font-size: 0.95rem;
         }
 
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .blog-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .blog-card .blog-date {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .blog-card .blog-excerpt {
+            color: var(--text-light);
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+        }
+
+        .blog-card .blog-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+
+        .blog-card .blog-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--primary-color);
+            font-size: 0.8rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .blog-card .blog-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .blog-card .blog-link:hover {
+            color: var(--primary-dark);
+        }
+
         .card-meta {
             font-size: 0.85rem;
             color: var(--text-light);
@@ -316,7 +374,7 @@
     <!-- 顶部导航栏 -->
     <header>
         <nav>
-            <div class="logo">MyBrand.</div>
+            <div class="logo">Land</div>
             <ul>
                 <li><a href="#hero">首页</a></li>
                 <li><a href="#about">关于我</a></li>
@@ -332,7 +390,7 @@
     <!-- 首页介绍区域 -->
     <section id="hero">
         <h1>你好，我是 <span>digouyou</span></h1>
-        <p>一个全栈开发者，热爱开源和技术分享</p>
+        <p>一个热爱技术的开水壶</p>
         <a href="#projects" class="btn">查看我的作品</a>
     </section>
 
@@ -371,13 +429,58 @@
         </div>
     </section>
 
+    <!-- 最新博客 -->
+    <section id="blogs">
+        <h2 class="section-title">最新博客</h2>
+        <div class="blog-grid">
+            <article class="card blog-card">
+                <h3><i class="fa-solid fa-file-lines"></i>Python Web开发从入门到精通</h3>
+                <div class="blog-date">2026-05-20 · 8 分钟阅读</div>
+                <p class="blog-excerpt">从 Flask 入门、项目结构到常见实践，适合想快速搭建 Python Web 项目的同学。</p>
+                <div class="blog-tags">
+                    <span class="blog-tag">Python</span>
+                    <span class="blog-tag">Flask</span>
+                </div>
+                <div class="card-footer">
+                    <a href="post1.html" class="blog-link">阅读文章 →</a>
+                </div>
+            </article>
+
+            <article class="card blog-card">
+                <h3><i class="fa-solid fa-chart-line"></i>前端性能优化完全指南</h3>
+                <div class="blog-date">2026-05-18 · 12 分钟阅读</div>
+                <p class="blog-excerpt">整理代码分割、懒加载、缓存和运行时优化的几个实用起点。</p>
+                <div class="blog-tags">
+                    <span class="blog-tag">前端</span>
+                    <span class="blog-tag">性能优化</span>
+                </div>
+                <div class="card-footer">
+                    <a href="post2.html" class="blog-link">阅读文章 →</a>
+                </div>
+            </article>
+
+            <article class="card blog-card">
+                <h3><i class="fa-solid fa-code-branch"></i>Git与版本控制最佳实践</h3>
+                <div class="blog-date">2026-05-15 · 10 分钟阅读</div>
+                <p class="blog-excerpt">从提交规范、分支管理到冲突处理，适合梳理日常协作流程。</p>
+                <div class="blog-tags">
+                    <span class="blog-tag">Git</span>
+                    <span class="blog-tag">DevOps</span>
+                </div>
+                <div class="card-footer">
+                    <a href="post3.html" class="blog-link">阅读文章 →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <!-- 页脚 -->
     <footer>
         <div class="social-links">
             <!-- 将这里的 href 替换为你真实的社交链接 -->
             <a href="https://github.com/digouyouu" target="_blank" title="GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
             <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:your.email@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:2074920584@qq.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <p>&copy; 2026 digouyou. All rights reserved.</p>
     </footer>
